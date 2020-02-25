@@ -44,7 +44,7 @@ export const Profile = ({ match }) => {
 						<div className="col-sm-3 text-center">
 							<img src={avatar_url} alt={name} style={{ width: '150px' }} />
 							<h1>{name}</h1>
-							{location && <p>Местоположение: {location}</p>}
+							{location && <p>Location: {location}</p>}
 						</div>
 						<div className="col">
 							{bio && (
@@ -59,7 +59,7 @@ export const Profile = ({ match }) => {
 								rel="noopener noreferrer"
 								className="btn btn-dark"
 							>
-								Открыть профиль
+								Open profile
 							</a>
 							<ul>
 								{login && (
@@ -70,7 +70,7 @@ export const Profile = ({ match }) => {
 
 								{company && (
 									<li>
-										<strong>Компания: </strong> {company}
+										<strong>Company: </strong> {company}
 									</li>
 								)}
 
@@ -81,10 +81,10 @@ export const Profile = ({ match }) => {
 								)}
 							</ul>
 
-							<div className="badge badge-primary">Подписчики: {followers}</div>
-							<div className="badge badge-success">Подписан: {following}</div>
+							<div className="badge badge-primary">Followers: {followers}</div>
+							<div className="badge badge-success">Following: {following}</div>
 							<div className="badge badge-info">
-								Репозитории: {public_repos}
+								Public repos: {public_repos}
 							</div>
 							<div className="badge badge-dark">Gists: {public_gists}</div>
 						</div>
